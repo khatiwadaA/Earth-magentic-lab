@@ -1,18 +1,18 @@
-from __future__ import division
+rom __future__ import division
 import numpy as np
 import matplotlib.pyplot as plt
 
 #-------------------------------------------#
 #Data Section - Create Arrays for data. Perform necessary calculations
 #CHANGE THE VARIABLE NAMES and numbers to match your data
-yvariable_changeme = np.array([1.40,-2.40,3.71,-4.45,5.73,-6.74,8.56,-9.74,12.55,-13.68]) #what are units?
-xvariable_changeme = np.array([10,-10,20,-20,30,-30,40,-40,50,-50]) #what are units?
+yvariable_changeme = np.array([-0.001368,-0.000974,-0.000674,-0.000445,-0.000240,0.000140, 0.000371, 0.000573 , 0.000856, 0.001255]) #what are units?
+xvariable_changeme = np.array([-1.19175359259,-0.839099631177,-0.57735026919,-0.363970234266,-0.176326980708,0.176326980708 , 0.363970234266, 0.57735026919, 0.839099631177, 1.19175359259]) #what are units?
 
 
 #--------------------------------------------#
 #Create arrays for uncertainties
 #CHANGE THE VARIABLE NAME and numbers to match your data 
-err_yvariable_changeme = np.array([0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1])
+err_yvariable_changeme = np.array([0.001, 0.0001, 0.0001, 0.0001, 0.0001,0.0001,0.0001,0.0001,0.0001,0.0001])
 
 
 #--------------------------------------------#

@@ -5,14 +5,14 @@ import matplotlib.pyplot as plt
 #-------------------------------------------#
 #Data Section - Create Arrays for data. Perform necessary calculations
 #CHANGE THE VARIABLE NAMES and numbers to match your data
-xvariable_changeme = np.array([10,-10,20,-20,30,-30,40,-40,50,-50]) #what are units?
-yvariable_changeme = np.array([2.16,-3.30,5.96,-5.97,8.71,-9.74,12.88,-14.27,19.56,-19.97]) #what are units?
+xvariable_changeme = np.array([-1.19175359259,-0.839099631177,-0.57735026919,-0.363970234266,-0.176326980708,0.176326980708 , 0.363970234266, 0.57735026919, 0.839099631177, 1.19175359259])
+yvariable_changeme = np.array([-0.01997,-0.01427,-0.00974,-0.00597,-0.00330,0.00216, 0.00596, 0.00871 , 0.01288, 0.01956]) #what are units?
 
 
 #--------------------------------------------#
 #Create arrays for uncertainties
 #CHANGE THE VARIABLE NAME and numbers to match your data 
-err_yvariable_changeme = np.array([0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1])
+err_yvariable_changeme = np.array([0.001, 0.0001, 0.0001, 0.0001, 0.0001,0.0001,0.0001,0.0001,0.0001,0.0001])
 
 
 #--------------------------------------------#

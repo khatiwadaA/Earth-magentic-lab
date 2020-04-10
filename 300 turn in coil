@@ -1,4 +1,4 @@
-rom __future__ import division
+from __future__ import division
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -12,7 +12,7 @@ xvariable_changeme = np.array([-1.19175359259,-0.839099631177,-0.57735026919,-0.
 #--------------------------------------------#
 #Create arrays for uncertainties
 #CHANGE THE VARIABLE NAME and numbers to match your data 
-err_yvariable_changeme = np.array([0.001, 0.0001, 0.0001, 0.0001, 0.0001,0.0001,0.0001,0.0001,0.0001,0.0001])
+err_yvariable_changeme = np.array([0.0001, 0.0001, 0.0001, 0.0001, 0.0001,0.0001,0.0001,0.0001,0.0001,0.0001])
 
 
 #--------------------------------------------#
@@ -58,16 +58,16 @@ plt.scatter(x, y, color='blue', marker='o')
  
  
 #create labels  YOU NEED TO CHANGE THESE!!!
-plt.ylabel('I')
+plt.ylabel('I(A)')
 plt.xlabel('Tan theta')
-plt.title('Horizontal component of earths magnetic field with 3 hundred turns in the coil')
+plt.title('current I vs tan theta in 300 turn')
  
 plt.errorbar(x, y, yerr=dy, xerr=None, fmt="none") #don't need to plot x error bars
  
-plt.annotate('Slope (units_changeme) = {value:.{digits}E}'.format(value=m, digits=2),
+plt.annotate('Slope (A/tan(theta))) = {value:.{digits}E}'.format(value=m, digits=2),
              (0.05, 0.9), xycoords='axes fraction')
  
-plt.annotate('Error in Slope (units_changeme) = {value:.{digits}E}'.format(value=dm, digits=1),
+plt.annotate('Error in Slope (A/tan(theta))) = {value:.{digits}E}'.format(value=dm, digits=1),
              (0.05, 0.85), xycoords='axes fraction')
  
 plt.annotate('Goodness of fit = {value:.{digits}E}'.format(value=N, digits=2),
